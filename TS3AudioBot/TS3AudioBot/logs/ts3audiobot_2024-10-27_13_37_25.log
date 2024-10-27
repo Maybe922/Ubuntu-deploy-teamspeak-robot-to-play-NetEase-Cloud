@@ -1,0 +1,55 @@
+2024-10-27 13:37:25.6594| INFO|Core|Setup.LogHeader [============ TS3AudioBot started =============]
+2024-10-27 13:37:25.6888| INFO|Core|Setup.LogHeader [ Date: Sunday, 27 October 2024 13:37:25
+2024-10-27 13:37:25.7134| INFO|Core|Setup.LogHeader [ Version: <?>/<?>/<?>
+2024-10-27 13:37:25.7134| INFO|Core|Setup.LogHeader [ Build: <?>
+2024-10-27 13:37:25.7134| INFO|Core|Setup.LogHeader [ Platform: Ubuntu 20.04 LTS (Focal Fossa) (64bit)
+2024-10-27 13:37:25.7134| INFO|Core|Setup.LogHeader [ Runtime: .NET Framework 3.1.32 ServerGC:True GC:SustainedLowLatency
+2024-10-27 13:37:25.7134| INFO|Core|Setup.LogHeader [ Opus: libopus 1.3.1 (x64)
+2024-10-27 13:37:25.7134| INFO|Core|Setup.LogHeader [==============================================]
+2024-10-27 13:37:26.0758|ERROR|Core|WebServer.StartWebServerInternal Can't find a WebInterface path to host. Try specifying the path to host in the config
+2024-10-27 13:37:26.0758| INFO|Core|WebServer.StartWebServerInternal Starting Webserver on port 58913
+2024-10-27 13:37:26.2274| INFO|Core|Bot.Run Bot "default" connecting to "blackhumour.ts3.red"
+2024-10-27 13:37:26.8943| INFO|Core|Ts3Client.ConnectClient Client connected.
+2024-10-27 13:37:33.3007| INFO|0|Bot.OnMessageReceived User 无双. requested: !plugins in
+2024-10-27 13:37:38.8603| INFO|0|Bot.OnMessageReceived User 无双. requested: !plugins load 0
+2024-10-27 13:37:40.4555| INFO|0|Bot.OnMessageReceived User 无双. requested: !plugins in
+2024-10-27 13:37:42.7010| INFO|0|Bot.OnMessageReceived User 无双. requested: !yun login
+2024-10-27 13:37:42.7454|ERROR|0|Bot.TryCatchCommand Unexpected command error: Connection refused Connection refused
+System.Net.WebException: Connection refused Connection refused
+ ---> System.Net.Http.HttpRequestException: Connection refused
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at System.Net.HttpWebRequest.SendRequest()
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.WebRequest.<>c.<GetResponseAsync>b__68_2(IAsyncResult iar)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at YunPlugin.HttpGetAsync(String url)
+   at YunPlugin.GetLoginKey()
+   at YunPlugin.CommandLoginAsync(Ts3Client ts3Client, TsFullClient tsClient)
+   at TS3AudioBot.CommandSystem.Commands.FunctionCommand.ExecuteFunction(Object[] parameters) in C:\Users\13336\OneDrive\桌面\TS3DEV\TS3AudioBot-master\TS3AudioBot\CommandSystem\Commands\FunctionCommand.cs:line 83
+   at TS3AudioBot.CommandSystem.Commands.FunctionCommand.Execute(ExecutionInformation info, IReadOnlyList`1 arguments) in C:\Users\13336\OneDrive\桌面\TS3DEV\TS3AudioBot-master\TS3AudioBot\CommandSystem\Commands\FunctionCommand.cs:line 205
+   at TS3AudioBot.CommandSystem.BotCommand.Execute(ExecutionInformation info, IReadOnlyList`1 arguments) in C:\Users\13336\OneDrive\桌面\TS3DEV\TS3AudioBot-master\TS3AudioBot\CommandSystem\BotCommand.cs:line 131
+   at TS3AudioBot.CommandSystem.Commands.CommandGroup.Execute(ExecutionInformation info, IReadOnlyList`1 arguments) in C:\Users\13336\OneDrive\桌面\TS3DEV\TS3AudioBot-master\TS3AudioBot\CommandSystem\Commands\CommandGroup.cs:line 63
+   at TS3AudioBot.CommandSystem.Commands.CommandGroup.Execute(ExecutionInformation info, IReadOnlyList`1 arguments) in C:\Users\13336\OneDrive\桌面\TS3DEV\TS3AudioBot-master\TS3AudioBot\CommandSystem\Commands\CommandGroup.cs:line 63
+   at TS3AudioBot.CommandSystem.Commands.RootCommand.Execute(ExecutionInformation info, IReadOnlyList`1 arguments) in C:\Users\13336\OneDrive\桌面\TS3DEV\TS3AudioBot-master\TS3AudioBot\CommandSystem\Commands\RootCommand.cs:line 41
+   at TS3AudioBot.CommandSystem.CommandManager.Execute(ExecutionInformation info, String command) in C:\Users\13336\OneDrive\桌面\TS3DEV\TS3AudioBot-master\TS3AudioBot\CommandSystem\CommandManager.cs:line 401
+   at TS3AudioBot.Bot.<>c__DisplayClass42_0.<<CallScript>b__0>d.MoveNext() in C:\Users\13336\OneDrive\桌面\TS3DEV\TS3AudioBot-master\TS3AudioBot\Bot.cs:line 490
+--- End of stack trace from previous location where exception was thrown ---
+   at TS3AudioBot.Bot.TryCatchCommand(ExecutionInformation info, Boolean answer, Func`1 action) in C:\Users\13336\OneDrive\桌面\TS3DEV\TS3AudioBot-master\TS3AudioBot\Bot.cs:line 517
+2024-10-27 13:40:57.8359| INFO||Core.ConsoleInterruptHandler Got interrupt signal, trying to soft-exit.
+2024-10-27 13:40:57.8359| INFO||Core.StopAsync TS3AudioBot shutting down.
+2024-10-27 13:40:57.8409| INFO||Bot.Stop Bot (0) disconnecting.
+2024-10-27 13:40:57.8658| INFO||WebServer.Dispose WebServer is closing
+2024-10-27 13:40:57.8658| INFO|Core|WebServer.OnShutdown WebServer has closed
+2024-10-27 13:40:57.8675| INFO||Core.StopAsync Bye

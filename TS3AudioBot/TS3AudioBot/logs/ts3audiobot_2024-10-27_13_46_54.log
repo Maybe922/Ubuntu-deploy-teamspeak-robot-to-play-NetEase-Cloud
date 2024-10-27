@@ -1,0 +1,18 @@
+2024-10-27 13:46:54.0402| INFO|Core|Setup.LogHeader [============ TS3AudioBot started =============]
+2024-10-27 13:46:54.0753| INFO|Core|Setup.LogHeader [ Date: Sunday, 27 October 2024 13:46:54
+2024-10-27 13:46:54.1002| INFO|Core|Setup.LogHeader [ Version: <?>/<?>/<?>
+2024-10-27 13:46:54.1002| INFO|Core|Setup.LogHeader [ Build: <?>
+2024-10-27 13:46:54.1002| INFO|Core|Setup.LogHeader [ Platform: Ubuntu 20.04 LTS (Focal Fossa) (64bit)
+2024-10-27 13:46:54.1002| INFO|Core|Setup.LogHeader [ Runtime: .NET Framework 3.1.32 ServerGC:True GC:SustainedLowLatency
+2024-10-27 13:46:54.1002| INFO|Core|Setup.LogHeader [ Opus: libopus 1.3.1 (x64)
+2024-10-27 13:46:54.1002| INFO|Core|Setup.LogHeader [==============================================]
+2024-10-27 13:46:54.4632|ERROR|Core|WebServer.StartWebServerInternal Can't find a WebInterface path to host. Try specifying the path to host in the config
+2024-10-27 13:46:54.4632| INFO|Core|WebServer.StartWebServerInternal Starting Webserver on port 58913
+2024-10-27 13:46:54.6185| INFO|Core|Bot.Run Bot "default" connecting to "blackhumour.ts3.red"
+2024-10-27 13:46:55.4471| INFO|Core|Ts3Client.ConnectClient Client connected.
+2024-10-27 13:47:30.5972| INFO||Core.ConsoleInterruptHandler Got interrupt signal, trying to soft-exit.
+2024-10-27 13:47:30.5993| INFO||Core.StopAsync TS3AudioBot shutting down.
+2024-10-27 13:47:30.6033| INFO||Bot.Stop Bot (0) disconnecting.
+2024-10-27 13:47:30.6237| INFO||WebServer.Dispose WebServer is closing
+2024-10-27 13:47:30.6237| INFO|Core|WebServer.OnShutdown WebServer has closed
+2024-10-27 13:47:30.6237| INFO||Core.StopAsync Bye
